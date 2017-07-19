@@ -1,0 +1,23 @@
+Instuções para utlização
+------------------------
+
+ExPSD -> App android que deverá ser aberto no Android Studio e compilado utlizando um dispositivo físico preferencialmente.
+-----
+         Como alternativa a execução pelo Android Studio, poderá ser instalado o arquivo app-debug.apk no dispositivo.
+
+  	 Ao executar o app no dispositivo, deve-se preencher o campo IP Server com o ip de sua rede. Por padrão e como exemplo, esse campo vem preenchido com o valor default http://192.168.0.102:8000 onde 8000 é a porta utilizado pelo aplicativo Server a seguir.
+
+
+exmysql -> App Node.js que irá atuar como servidor para receber os dados enviados pelo app Android. 
+-------
+	   O banco utilizado foi o MySQL, devendo rodar um script em anexo para criação da tabela. Nome do banco: sqldb e o nome da tabela: ponto
+
+	   Com relação ao node, deve-se realizar as seguintes instalações
+
+	   npm install express -S
+           npm install body-parser -S
+	   npm install mysql -S
+	   npm install formidable -S
+
+
+Obs.: No dispositivo, as fotos ficam armazenadas dentro de Pictures na pasta ExPSD. No servidor as fotos ficam armazendas dentro do diretório routes\uploads.
